@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:32:52 +0800] "GET /search.html HTTP/1.1" 200 24139 http-bio-9104-exec-1 78
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:32:52 +0800] "GET /js/basenopage.js HTTP/1.1" 304 - http-bio-9104-exec-3 7
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:32:52 +0800] "GET /js/service/searchService.js HTTP/1.1" 304 - http-bio-9104-exec-2 10
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:32:52 +0800] "GET /js/controller/searchController.js HTTP/1.1" 304 - http-bio-9104-exec-5 18
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:32:52 +0800] "GET /js/controller/baseController.js HTTP/1.1" 304 - http-bio-9104-exec-4 26
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:32:52 +0800] "GET /assets/img/favicon.ico HTTP/1.1" 404 995 http-bio-9104-exec-8 2
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:33:00 +0800] "GET /js/plugins/jquery/jquery.min.map HTTP/1.1" 404 1015 http-bio-9104-exec-10 1
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:33:12 +0800] "POST /search.do HTTP/1.1" 500 14679 http-bio-9104-exec-9 19841
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:33:23 +0800] "GET /js/plugins/jquery/jquery.min.map HTTP/1.1" 404 1015 http-bio-9104-exec-10 1
+0:0:0:0:0:0:0:1 - - [16/Apr/2021:21:33:28 +0800] "POST /search.do HTTP/1.1" 200 7249 http-bio-9104-exec-10 5689

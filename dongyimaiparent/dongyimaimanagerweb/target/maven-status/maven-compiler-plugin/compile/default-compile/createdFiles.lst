@@ -1,0 +1,12 @@
+com\dongyimai\manager\controller\ContentController.class
+com\dongyimai\manager\controller\ContentCategoryController.class
+com\dongyimai\manager\controller\TypeTemplateController.class
+com\dongyimai\manager\controller\GoodsController.class
+com\dongyimai\manager\controller\SellerController.class
+com\dongyimai\manager\controller\loginController.class
+com\dongyimai\manager\controller\BrandController.class
+com\dongyimai\manager\controller\GoodsController$2.class
+com\dongyimai\manager\controller\UploadController.class
+com\dongyimai\manager\controller\SpecificationController.class
+com\dongyimai\manager\controller\GoodsController$1.class
+com\dongyimai\manager\controller\ItemCatController.class

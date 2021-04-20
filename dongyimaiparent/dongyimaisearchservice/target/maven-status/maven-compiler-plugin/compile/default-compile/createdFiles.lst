@@ -1,0 +1,3 @@
+com\dongyimai\search\service\listener\DeleteGoodsListener.class
+com\dongyimai\search\service\listener\ItemSearchListener.class
+com\dongyimai\search\service\impl\ItemSearchServiceImpl.class
