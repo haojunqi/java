@@ -34,13 +34,13 @@ public class ProjectInfoController {
     @ApiOperation(value = "根据回报id回去返回信息")
     @PostMapping ("/getReturn/{returnId}")
     public AppResponse<TReturn> getReturn(@PathVariable("returnId")Integer returnId){
-        System.out.println(returnId);
+        System.out.println("根据回报id获取"+returnId);
         return AppResponse.ok(projectInfoService.getReturn(returnId));
     }
 
     @ApiOperation(value = "获取所有的项目")
     @GetMapping("/getAllPorject")
-    public AppResponse<List<ProjectVo>> getAllProject(@PathVariable("returnId") Integer returnId){
+    public AppResponse<List<ProjectVo>> getAllProject(){
         List<TProject> allProject = projectInfoService.getAllProject();
         ArrayList<ProjectVo> pvos = new ArrayList<>();
         for (TProject pro:allProject){

@@ -30,6 +30,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public TOrder saveOrder(OrderInfoSubmitVo ordervo) {
         TOrder tOrder = new TOrder();
+        System.out.println("订单中获取"+ordervo.getAccessToken());
         String member = stringRedisTemplate.opsForValue().get(ordervo.getAccessToken());
         if (StringUtils.isEmpty(member)){
             throw new RuntimeException("用户没有登录");

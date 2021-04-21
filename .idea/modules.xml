@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/scw-parent/user-parent/scw-project/scw-project.iml" filepath="$PROJECT_DIR$/scw-parent/user-parent/scw-project/scw-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/scw-parent/scw-register/scw-register.iml" filepath="$PROJECT_DIR$/scw-parent/scw-register/scw-register.iml" />
       <module fileurl="file://$PROJECT_DIR$/scw-parent/user-parent/scw-user/scw-user.iml" filepath="$PROJECT_DIR$/scw-parent/user-parent/scw-user/scw-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scw-parent/user-parent/scw-webui/scw-webui.iml" filepath="$PROJECT_DIR$/scw-parent/user-parent/scw-webui/scw-webui.iml" />
       <module fileurl="file://$PROJECT_DIR$/scw-parent/user-parent/user-parent.iml" filepath="$PROJECT_DIR$/scw-parent/user-parent/user-parent.iml" />
     </modules>
   </component>

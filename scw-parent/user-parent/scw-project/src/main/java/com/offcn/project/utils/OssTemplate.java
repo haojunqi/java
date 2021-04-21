@@ -27,6 +27,9 @@ public class OssTemplate {
     @Value("${oss.bucketurl}")
     private String bucketurl;
 
+    public OssTemplate() {
+    }
+
     /*文件上传*/
     public String uoloda(InputStream is, String fileName)  {
         System.out.println(fileName);

@@ -8,6 +8,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,8 @@ public class OrderController {
 
     @ApiOperation(value = "添加订单")
     @PostMapping("/creatOrder")
-    public AppResponse<TOrder> creatOrder(OrderInfoSubmitVo vo){
+    public AppResponse<TOrder> creatOrder(@RequestBody OrderInfoSubmitVo vo){
+        System.out.println("controller中获取"+vo.getAccessToken());
         TOrder tOrder = orderService.saveOrder(vo);
         return AppResponse.ok(tOrder);
     }

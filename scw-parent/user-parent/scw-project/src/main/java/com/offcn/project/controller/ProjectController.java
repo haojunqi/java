@@ -23,6 +23,7 @@ public class ProjectController {
     /*调用工具类*/
     @Autowired
     private OssTemplate ossTemplate;
+
     @PostMapping("/upload")
     public AppResponse<Map<String,Object>> upload(@RequestParam("file")MultipartFile[] files) throws IOException {
         /*用来作为返回的参数*/

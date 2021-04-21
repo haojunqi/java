@@ -37,11 +37,11 @@ public class UserController {
     @ApiOperation("获取验证码")   //说明方法的用途
     @PostMapping("/sendSms")
     public AppResponse<Object> sendSms(String mobile){
-        /*创建随机验证码*/
+        //创建随机验证码
         String substring = UUID.randomUUID().toString().substring(0, 4);
-        /*根据用户的手机号为键存储验证码，有效期为五分钟*/
+        //根据用户的手机号为键存储验证码，有效期为五分钟
         stringRedisTemplate.opsForValue().set(mobile,substring,5, TimeUnit.MINUTES);
-        /*开始发送短信*/
+        //开始发送短信
         String sendReponse = smsTemplate.sendSma(mobile, substring);
         if (sendReponse==null || sendReponse.equals("fail")){
             return AppResponse.fail("验证码发送失败");
@@ -91,9 +91,10 @@ public class UserController {
 
     }
 
-    @GetMapping("/getUser/{id}")
     @ApiOperation("获取一个用户信息")
+    @GetMapping("/getUser/{id}")
     public AppResponse<UserRspeonse> getOneUser(@PathVariable("id") Integer id){
+        System.out.println("userapp"+id);
         TMember member = userService.findById(id);
         UserRspeonse userRspeonse = new UserRspeonse();
         BeanUtils.copyProperties(member,userRspeonse);
@@ -103,7 +104,7 @@ public class UserController {
     /*查询用户收件地址*/
     @GetMapping("/getAddress/{accessToken}")
     @ApiOperation(value = "获取用户收件地址")
-    public AppResponse<List<TMemberAddress>> getAddress(String accessToken){
+    public AppResponse<List<TMemberAddress>> getAddress(@PathVariable("accessToken") String accessToken){
         String memberId = stringRedisTemplate.opsForValue().get(accessToken);
         if (StringUtils.isEmpty(memberId)){
             AppResponse<List<TMemberAddress>> fail = AppResponse.fail(null);
